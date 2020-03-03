@@ -1,0 +1,243 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>POLITICAL NEWS</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+</head>
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+      <nav class="site-navigation position-relative text-right bg-black text-md-right" role="navigation">
+        <div class="container position-relative">
+          <div class="site-logo">
+      <a href="#"><img src="style/world.jpeg" alt="Image"></a>
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html">POLITICAL<span class="logo_colour">NEWS</span></a></h1>
+          <h2>Welcome to Tonny Politial News </h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li class="selected"><a href="index.html">Home</a></li>
+          <li><a href="examples.html">Africa</a></li>
+          <li><a href="page.html">Europe</a></li>
+          <li><a href="another_page.html">Asia</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+
+<div class="container" style="margin-top:50px">
+  <div class="row">
+    <div class="col-md-4">
+      
+    </div>
+  </div>
+</div>
+
+
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 400px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="style/zuma.jpeg" style="width:100%">
+  <div class="text">welcome</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="style/images.jpeg" style="width:100%">
+  <div class="text">welcome</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="style/kenya.jpeg" style="width:100%">
+  <div class="text">welcome</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+ 
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+    <div id="content_header"></div>
+    <div id="site_content">
+      <div id="banner"></div>
+	  <div id="sidebar_container">
+        <div class="sidebar">
+          <div class="sidebar_top"></div>
+          <div class="sidebar_item">
+           
+            <!-- insert your sidebar items here -->
+            <h3>Latest News</h3>
+            <h4>More News</h4>
+
+     <span class="center"><img src="style/putin.jpeg" alt=" example putin" width="150" /></span>
+            <h5>June 1st, 2014</h5>
+            <p>2018 we have seen a lot of concerning our politics in many countries .<br /><a href="#">Read more</a></p>
+
+          </div>
+          <div class="sidebar_base"></div>
+        </div>
+        <div class="sidebar">
+          <div class="sidebar_top"></div>
+          <div class="sidebar_item">
+            <h3>more news</h3>
+            <ul>
+              <li><a href="#">Africa</a></li>
+              <li><a href="#">USA</a></li>
+              <li><a href="#">Europe</a></li>
+              <li><a href="#">Asia</a></li>
+            </ul>
+          </div>
+          <div class="sidebar_base"></div>
+        </div>
+        <div class="sidebar">
+          <div class="sidebar_top"></div>
+          <div class="sidebar_item">
+            <h3>Search</h3>
+            <form method="post" action="#" id="search_form">
+              <p>
+                <input class="search" type="text" name="search_field" value="Enter keywords....." />
+                <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/search.png" alt="Search" title="Search" />
+              </p>
+            </form>
+          </div>
+          <div class="sidebar_base"></div>
+        </div>
+      </div>
+      <div id="content">
+        <!-- insert the page content here -->
+        <h1>Welcome to the Political News page</h1>
+        <p> Our news are correct and reliable. You can only get this news from here.</p>
+        <p>The best news <strong>Political</strong> and <strong>News</strong>You can access our news from anywhere.</p>
+        <p>You can view more news on political news <a href="http://www.politicalnews.co.uk">@tonnypolitics</a>.</p>
+        <p>We give you well captured and analysed information.The political news you would like to have with you .</p>
+        <h2>You can get news from the following places: </h2>
+        <p>News from all over the world</p>
+        <ul>
+          <li>Africa</li>
+          <li>Eurpope</li>
+          <li>Asia</li>
+        </ul>
+      </div>
+    </div>
+    <frameset></frame>
+    </frameset>
+    <div id="content_footer"></div>
+    <div id="footer">
+      <p><a href="index.html">Home</a> | <a href="examples.html">Africa</a> | <a href="page.html">Europe</a> | <a href="another_page.html">Asia</a> | <a href="contact.html">Contact Us</a></p>
+      <p>Copyright &copy; plitical news| <a href="http://validator.w3.org/check?uri=referer">@politicalnews</a> | <a href="http://jigsaw.w3.org/css-validator/check/referer">@tonny</a> |
+    </div>
+  </div>
+</body>
+</html>
